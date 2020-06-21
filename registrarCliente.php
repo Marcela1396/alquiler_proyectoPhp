@@ -1,4 +1,5 @@
 <?php
+    // Registra un cliente en la base de datos
     include 'encabezado.php';
     include 'conexion.php';
 
@@ -6,20 +7,18 @@
     $nombre = $_POST["nombreCli"];
     $telefono = $_POST["telefonoCli"];
 
-    $sql = "UPDATE clientes SET nombre='$nombre', telefono='$telefono'
-    WHERE cedula ='$cedula'";
+    $sql="INSERT INTO clientes (cedula, nombre, telefono)
+          values('$cedula','$nombre','$telefono')";
+    
     if($conexion->query($sql) === TRUE) {
         echo('
             <br> <br>
             <div class="container">
                 <div class="card">
                 <!-- Card image -->
-                <div align="center">
-                    <img src="images/actualiza.png" height="300" width="300" >
-                </div>
+                <img class="card-img-top" src="images/exitoso.png">
                     <!-- Card content -->
                     <div class="card-body" align="center">
-                        <p> Actualizacion Exitosa </p>
                         <a href="visualizaClientes.php" class="btn btn-primary">Aceptar</a>
                     </div>
                 </div>
@@ -44,6 +43,6 @@
         </div>
         ');
     }
+    
 
-    include 'pie.php';
 ?>

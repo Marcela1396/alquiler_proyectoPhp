@@ -1,6 +1,3 @@
-<?php
-    include 'conexion.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,11 +33,8 @@
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript" src="js/funciones.js"></script>
 
-    
 </head>
     
-</head>
-
 <body>
 <!-- Abre barra de navegación -->
 
@@ -61,7 +55,6 @@
                     aria-haspopup="true" aria-expanded="false">Clientes</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="formClientes.php">Registrar</a>
-                    <a class="dropdown-item" href="actualizaClientes.php">Actualizar</a>
                     <a class="dropdown-item" href="visualizaClientes.php">Visualizar</a>
                     </div>
                 </li>
@@ -71,7 +64,6 @@
                     aria-haspopup="true" aria-expanded="false">Autos</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="formAutos.php">Registrar</a>
-                    <a class="dropdown-item" href="actualizaAutos.php">Actualizar</a>
                     <a class="dropdown-item" href="visualizaAutos.php">Visualizar</a>
                     </div>
                 </li>

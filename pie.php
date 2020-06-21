@@ -1,8 +1,3 @@
-<?php
-    mysqli_close($conexion);  // Cierra la conexión
-
-?>
-
 <!-- Footer -->
 <br> <br>
 <footer class="page-footer font-small cyan darken-3">

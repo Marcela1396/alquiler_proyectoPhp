@@ -1,11 +1,11 @@
 <?php
     include 'encabezado.php';
+    include 'conexion.php';
 
     echo('
-        <div align="center"> 
+        <div align="center" class="container"> 
         <br>
             <h3> Listado de clientes </h3>
-        </div>
     ');
 
     $sql = "SELECT * FROM clientes";
@@ -20,6 +20,7 @@
                         <th scope="col">Cedula</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Telefono</th>
+                        <th scope="col"> <p align="center"> Opciones </p> </th>
                     </tr>
                 </thead>
         ');
@@ -37,6 +38,10 @@
                         <td>'.$cedula.'</td>
                         <td>'.$nombre.'</td>
                         <td>'.$telefono.'</td>
+                        <td> 
+                        <a href= "formActualizaClientes.php?id='. $cedula.' "class="btn btn btn-secondary"> Editar </a> 
+                        <a href= "eliminaClientes.php?id='.$cedula.' "class="btn btn btn-danger"> Eliminar </a>  
+                        </td>
                     </tr>
             ');                        
         }
@@ -44,6 +49,7 @@
         echo('
                 </tbody>
             </table>
+        </div>
         ');   
     }
     

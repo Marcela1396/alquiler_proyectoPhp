@@ -1,11 +1,12 @@
 <?php
     include 'encabezado.php';
+    include 'conexion.php';
 
     echo('
-        <div align="center"> 
+        <div align="center" class="container"> 
         <br>
             <h3> Listado de Autos </h3>
-        </div>
+        
     ');
 
     $sql = "SELECT * FROM autos JOIN marca on mark = idMarca";
@@ -21,6 +22,7 @@
                         <th scope="col">Marca</th>
                         <th scope="col">Modelo</th>
                         <th scope="col">Estado</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
         ');
@@ -45,12 +47,17 @@
                         <td>'.$marca.'</td>
                         <td>'.$modelo.'</td>
                         <td>'.$estado.'</td>
+                        <td> 
+                        <a href= " "  class="btn btn btn-secondary"> Editar </a> 
+                        <a href= " "  class="btn btn btn-danger"> Eliminar </a>  
+                        </td>
                     </tr>
             ');                        
         }
         echo('
                 </tbody>
             </table>
+        </div>
         ');   
     }
     

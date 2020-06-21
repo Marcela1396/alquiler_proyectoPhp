@@ -29,11 +29,13 @@
             <label for="modelo">Modelo</label>
         </div>
 
-        <input type="button" class="btn btn-primary" onclick="registrarAuto()" value="Registrar">
-        <a href="visualizaAutos.php" class="btn btn-danger">Cancelar </a>
+        <button class="btn btn-primary" onclick="registrarAuto()" >Registrar </button>
+        <a href="index.php" class="btn btn-danger">Cancelar </a>
     </form>
-    
 </div>
 
 
+<?php
+    include 'pie.php';
+?>
 

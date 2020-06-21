@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-06-2020 a las 20:15:28
+-- Tiempo de generación: 20-06-2020 a las 02:59:44
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.2.31
 
@@ -54,9 +54,10 @@ CREATE TABLE `autos` (
 --
 
 INSERT INTO `autos` (`placa`, `modelo`, `mark`, `estado`) VALUES
-('AB001', '2015', 2, 1),
-('PQRS21', '2013', 3, 1),
-('ROU21A', '2010', 1, 0);
+('0909', '2', 2, 1),
+('0990', '2022', 2, 1),
+('09992', '2000', 3, 1),
+('0999999', '2', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -75,9 +76,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`cedula`, `nombre`, `telefono`) VALUES
-('123', 'Mariana Salazar', '7230891'),
-('456', 'Luis Lopez', '7239191'),
-('567', 'Rosa Perez', '7201010');
+('0009', 'Jesus Martinez', '123'),
+('09009', 'Lolita Gomez', '729912');
 
 -- --------------------------------------------------------
 
