@@ -3,8 +3,8 @@
 ?>
 
 <div class="container">
-    <form id="formRegistroAutos" method="POST">
-        <br> <br>
+    <br> <br>
+    <form id="formRegistroAutos"  method="POST">
         
         <div align= "center">   
             <i class="far fa-id-card fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
@@ -17,7 +17,7 @@
             <label for="placa">Placa</label>
         </div>
 
-        <select class="browser-default custom-select" id="marca" name="marca" required>
+        <select class="browser-default custom-select" id="marca" name="mark" required>
             <option value="" disabled selected>Marca</option>
             <option value="1">Ford</option>
             <option value="2">Chevrolet</option>
@@ -25,15 +25,11 @@
         </select>
 
         <div class="md-form">
-            <input required type="text" id="modelo" name="modelo" class="form-control">
+            <input  type="text" id="modelo" name="modelo" class="form-control" required>
             <label for="modelo">Modelo</label>
         </div>
 
-        <input type="button" class="btn btn-primary" onclick="registrarAuto()" value="Registrar">
+       <input type="submit" class="btn btn-primary"  value="Registrar"> 
         <a href="visualizaAutos.php" class="btn btn-danger">Cancelar </a>
     </form>
-    
 </div>
-
-
-

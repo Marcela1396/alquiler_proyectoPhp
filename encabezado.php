@@ -31,8 +31,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript" src="js/funciones.js"></script>
-
 </head>
     
 <body>
@@ -76,3 +74,5 @@
 
     <!-- Cierra barra de navegacion -->
 </body>
+
+<script type="text/javascript" src="js/funciones.js"></script>
